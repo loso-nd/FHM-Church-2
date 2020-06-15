@@ -65,7 +65,7 @@ $(function () {
     /* =========================================
         COUNTDOWN 1
      ========================================= */
-    $('#clock').countdown('2020/6/14').on('update.countdown', function(event) {
+    $('#clock').countdown('2021/1/10').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<span class="h1 font-weight-bold">%D</span> Day%!d'
         + '<span class="h1 font-weight-bold">%H</span> Hr'
@@ -85,12 +85,12 @@ $(function () {
     /* =========================================
         COUNTDOWN 3
      ========================================= */
-    $('#clock-b').countdown('2020/06/14').on('update.countdown', function(event) {
+    $('#clock-b').countdown('2020/6/21').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
-        + '<div class="holder m-1"><span class="h3 font-weight-bold">%D</span> Day%!d</div>'
-        + '<div class="holder m-1"><span class="h3 font-weight-bold">%H</span> Hr</div>'
-        + '<div class="holder m-1"><span class="h3 font-weight-bold">%M</span> Min</div>'
-        + '<div class="holder m-1"><span class="h3 font-weight-bold">%S</span> Sec</div>'));
+        + '<div class="holder m-1"><span class="h2 font-weight-bold">%D</span> Day%!d</div>'
+        + '<div class="holder m-1"><span class="h2 font-weight-bold">%H</span> Hr</div>'
+        + '<div class="holder m-1"><span class="h2 font-weight-bold">%M</span> Min</div>'
+        + '<div class="holder m-1"><span class="h2 font-weight-bold">%S</span> Sec</div>'));
     });
 
 
