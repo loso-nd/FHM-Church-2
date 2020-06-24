@@ -85,7 +85,7 @@ $(function () {
     /* =========================================
         COUNTDOWN 3
      ========================================= */
-    $('#clock-b').countdown('2020/6/21').on('update.countdown', function(event) {
+    $('#clock-b').countdown('2020/6/28').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<div class="holder m-1"><span class="h2 font-weight-bold">%D</span> Day%!d</div>'
         + '<div class="holder m-1"><span class="h2 font-weight-bold">%H</span> Hr</div>'
@@ -123,3 +123,5 @@ $(function () {
     });
 */
 });
+
+$('.alert').alert()

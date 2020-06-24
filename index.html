@@ -16,55 +16,10 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 
     </head>
     <body id="page-top">
-        
-        <!--nav class="navbar navbar-dark navbar-expand-sm bg-warning fixed-top">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand mr-auto offset-1" href="./index.html">FHM Church</a>
-                <div class="col-1"></div>
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" data-toggle="dropdown">Home</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" data-toggle="dropdown">About</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" data-toggle="dropdown">Menu</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" data-toggle="dropdown">Contact</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </nav-->
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
             <div class="container">        
@@ -74,11 +29,6 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="dropdown">
                         <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">Home</button>
-                        <div class="dropdown-menu text-uppercase">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                            <a class="dropdown-item" href="#">Action 3</a>
-                        </div>
                     </div>
                     <div class="dropdown">
                         <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">Ministries</button>
@@ -94,7 +44,7 @@
                     <div class="dropdown">
                         <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown" href="#contact">Serve</button>
                     </div>
-                    <div class="dropdown">
+                    <div class="dropdown hover">
                         <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">About Us</button>
                         <div class="dropdown-menu text-uppercase">
                             <a class="dropdown-item nav-link" href="#">Contact Us</a>
@@ -116,51 +66,57 @@
             </div>
         </nav>
 
-    <!--Creating a Modal, All modal writting code should be placed at the top -->
-     <div class="modal fade" id="loginModal" role="dialog">
-         <div class="modal-dialog modal-lg" role="content">
-             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="loginModal">Login</h4>
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
-                       <span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputEmail3">Email Address</label>
-                                <input type="email" class="form-control form-control-sm mr-1" 
-                                    id="exampleInputEmail3" placeholder="Enter email">                    
-                            </div>
-                            
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1"
-                                    id="exampleInputPassword3" placeholder="Password">
-                            </div>
-
-                            <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label">Remember Me?</label>         
+        <!--Creating a Modal, All modal writting code should be placed at the top -->
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="loginModal">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" 
+                                        id="exampleInputEmail3" placeholder="Enter email">                    
                                 </div>
-                            </div>
+                                
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
 
-                        </div>   
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button> 
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>                                
-                        </div>                         
-                    </form>                    
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me?</label>         
+                                    </div>
+                                </div>
+
+                            </div>   
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button> 
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>                                
+                            </div>                         
+                        </form>                    
+                    </div>
                 </div>
-             </div>
-         </div>
-     </div>
+            </div>
+        </div>
     
         <!-- Jumbotron / Masthead-->
         <header class="jumbotron masthead">
             <div class="container">
+                <div class="align-top alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>COVID-19 UPDATES: </strong> We will not be having in-person church service until further notice.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
                 <div class="masthead-subheading">Welcome To First Haitian Missionary Church </div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
                 <!--    a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services" >Tell Me More</a-->
@@ -170,8 +126,8 @@
 
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container" style="background-color: rgb(219, 202, 216);">
-                <div class="row m-auto text-center">
+            <div class="container">
+                <div class="row m-auto">
                     <h1 class="text-uppercase">Service Schedule</h1>
                     <p class="text-muted" style="line-height: 32px;">Our main service is held every Sunday at 10:30 A.M. Take a look at our  
                         monthly calendar for details on other events happening at First Haitian Missionary!</p>
@@ -181,10 +137,10 @@
 
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container" style="background-color: rgb(219, 202, 216);">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 m-auto">
-                        <div class="bg-info d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <h1>Next Service In:</h1>
                         </div>
                     </div>
@@ -231,7 +187,7 @@
         <section class="page-section" id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="d-none d-sm-block order-sm-first">
+                    <div class="d-none d-sm-none d-md-none d-lg-block order-sm-first">
                         <div class="media bg-warning">
                             <img class="d-flex img-thumbnail" 
                                     src="assets/img/portfolio/01-thumbnail.jpg" alt="Img 1" />
@@ -244,8 +200,8 @@
                         </div>
                     </div>
                     <!-- Media Object 1 for Mobile-->
-                    <div class="m-auto d-block d-sm-none bg-info">
-                        <div class="card" style="width: 18rem;">
+                    <div class="m-auto d-block d-lg-none">
+                        <div class="card col-md-12">
                             <img src="assets/img/portfolio/tupac.png" class="card-img-top" alt="Tupac">
                             <div class="card-body">
                               <h2 class="card-title text-uppercase text-center">First Haitian Missionary Church</h2>
@@ -261,10 +217,10 @@
         </section>
 
         <!-- Media Object 2-->
-        <section class="page-section bg-info" id="portfolio">
+        <section class="page-section" id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="d-none d-sm-block order-last">
+                    <div class="d-none d-sm-none d-md-none d-lg-block order-last">
                         <div class="media bg-warning">
                             <img class="d-flex img-thumbnail" src="assets/img/portfolio/02-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body order-first">
@@ -277,18 +233,20 @@
                         </div>
                     </div>
                     <!-- Media Object 2 for Mobile-->
-                    <div class="m-auto d-block d-sm-none">
-                        <div class="card" style="width: 18rem;">
+                    <div class="m-auto d-block d-lg-none">
+                        <div class="card col-md-12">
                             <img src="assets/img/portfolio/ninasimone.png" class="card-img-top" alt="Nina Simone"/>
                             <div class="card-body">
-                                <h1 class="card-title text-uppercase text-center">Get Involved</h1>
-                                <p class="card-text text-center">Find a volunteer opportunity or ministry.</p> 
+                                <h2 class="card-title text-uppercase text-center">Visit First Haitian Missionary Church</h2>
+                                <p class="card-text text-center">We are located on the intersection of Lyons avenue and Chester
+                                    street in Irvington. Come fellowship with us!</p>
                                 <div class="text-center">
-                                    <button class="btn btn-secondary btn-md" type="button">Volunteer</button>
-                                    <button class="btn btn-secondary btn-md" type="button">Join A Group</button> 
+                                    <button class="btn btn-secondary btn-lg" type="button">Get Directions</button>
+                                    <button class="btn btn-secondary btn-lg" type="button">Learn More</button>  
                                 </div>
+                              <!--a href="#" class="btn btn-primary">Go somewhere</a-->
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -298,7 +256,7 @@
         <section class="page-section" id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="d-none d-sm-block order-sm-first">
+                    <div class="d-none d-sm-none d-md-none d-lg-block order-sm-first">
                         <div class="media bg-warning">
                             <img class="d-flex img-thumbnail" 
                                     src="assets/img/portfolio/03-thumbnail.jpg" alt="Img 1" />
@@ -314,16 +272,16 @@
                         </div>
                     </div>
                     <!-- Media Object 3 for Mobile-->
-                    <div class="m-auto d-block d-sm-none bg-info">
-                        <div class="card" style="width: 18rem;">
+                    <div class="m-auto d-block d-lg-none">
+                        <div class="card col-md-12">
                             <img src="assets/img/portfolio/obama.png" class="card-img-top" alt="Obama">
                             <div class="card-body">
                                 <h2 class="card-title text-uppercase text-center">Visit First Haitian Missionary Church</h2>
                                 <p class="card-text text-center">We are located on the intersection of Lyons avenue and Chester
                                     street in Irvington. Come fellowship with us!</p>
                                 <div class="text-center">
-                                    <button class="btn btn-secondary btn-md" type="button">Get Directions</button>
-                                    <button class="btn btn-secondary btn-md" type="button">Learn More</button>  
+                                    <button class="btn btn-secondary btn-lg" type="button">Get Directions</button>
+                                    <button class="btn btn-secondary btn-lg" type="button">Learn More</button>  
                                 </div>
                               <!--a href="#" class="btn btn-primary">Go somewhere</a-->
                             </div>
@@ -334,25 +292,42 @@
         </section>
             
         <!-- Footer-->
-        <footer class="footer py-4">
+        <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="text-left">
-                            <h2>1 CORINTHIANS 5:7</h2>
-                            <p>“For we live by faith, not by sight.”</p>
-                            <p class="align-items-bottom"><span class="fas fa-pray"></span> Need Prayer?</p>
+                <div class="row footer p-3 bg-warning">
+                    <!--div class="d-lg-none">
+                        <div class="col-12">
+                            <div class="d-lg-none">
+                                <h4 class="text-uppercase">1 CORINTHIANS 5:7</h4>
+                                <p>“For we live by faith, not by sight.”</p>
+                                <p class="align-items-bottom"><span class="fas fa-pray"></span> Need Prayer?</p>
+                            </div>
                         </div>
+                        <div class="col-12">
+                            <div class="my-3 my-lg-0 d-lg-none">
+                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <div>Copyright 2020 © First Haitian Missionary Church</div>
+                            <div class="p-2" ><a class="mr-3"href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>                    
+                        </div>
+                    </div-->
+                    <div class="col-md-4">
+                        <h4 class="text-uppercase">1 Corinthians</h4>
+                        <p>“For we live by faith, not by sight.”</p>
+                        <p><span class="fas fa-pray"></span> Need Prayer?</p>
                     </div>
-                    <div class="col-3">
-                        <div class="my-3 my-lg-0">
+                    <div class="col-md-4 p-2">
+                        <div>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="text-lg-right">Copyright 2020 © First Haitian Missionary Church</div>
-                        <div class="text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>                    
+                    <div class="col-md-4 p-2">
+                        <div>Copyright 2020 © First Haitian Missionary Church</div>
+                        <div class="pt-2" ><a class="mr-3"href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>                    
                     </div>
+
                 </div>
             </div>
         </footer>
