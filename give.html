@@ -19,49 +19,44 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 
     </head>
-    <body id="page-top">
+    <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-secondary fixed-top" id="mainNav">
             <div class="container">        
-                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fa fa-bars fa-lg"></i></span></button>
-                <a class="navbar-brand mr-auto offset-1" href="#page-top"><img src="#" alt="" />FHM Church</a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">Home</button>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">Ministries</button>
-                        <div class="dropdown-menu text-uppercase">
-                            <a class="dropdown-item" href="ministries.html">Children</a>
-                            <a class="dropdown-item" href="ministries.html">Youth</a>
-                            <a class="dropdown-item" href="ministries.html">Adults</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown" href="#about">Events</button>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown" href="#contact">Serve</button>
-                    </div>
-                    <div class="dropdown hover">
-                        <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">About Us</button>
-                        <div class="dropdown-menu text-uppercase">
-                            <a class="dropdown-item nav-link" href="#">Contact Us</a>
-                            <a class="dropdown-item nav-link" href="#">Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary text-uppercase" type="button" data-toggle="dropdown">Give</button>
-                        <div class="dropdown-menu text-uppercase">
-                            <a class="dropdown-item" href="#">Give Today</a>
-                            <a class="dropdown-item" href="#">Giving History</a>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginModal">
-                            <span class="fas fa-sign-in-alt"></span> Login</buton>
-                    </div>
+                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa fa-bars fa-lg"></i></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="./index.html"><img src="#" />FHM Church</a>
+                <div class="navbar-collapse collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto pl-2">
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="./ministries.html">Ministries</a>
+                            <div class="dropdown-menu text-uppercase">
+                                <a class="dropdown-item" href="./children.html">Children</a>
+                                <a class="dropdown-item" href="./youth.html">Youth</a>
+                                <a class="dropdown-item" href="./adults.html">Adults</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Serve</a></li>
+                        <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="#">About Us</a>
+                            <div class="dropdown-menu text-uppercase">
+                                <a class="dropdown-item" href="#">Contact Us</a>
+                                <a class="dropdown-item" href="#">Our Leaders</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="#">Give Today</a>
+                            <div class="dropdown-menu text-uppercase">
+                                <a class="dropdown-item" href="#">Give Today</a>
+                                <a class="dropdown-item" href="#">Giving History</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="navbar-text ml-auto" data-toggle="modal" data-target="#loginModal">
+                        <a id="loginButton">
+                            <span class="fas fa-sign-in-alt"></span> Login</a>
+                    </span>
                 </div>
             </div>
         </nav>
@@ -232,133 +227,133 @@
                 <div>
                     <h1> Frequently Asked Questions</h1>
                 </div>
-                <div id="accordion">
+                <div class="accordion" id="accordionExample">
+
                     <div class="card">
-                        <div class="card-header" role="tab" id="security">
+                        <div class="card-header" role="tab" id="headingOne">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#security">
-                                     Is online giving safe? Is your site secure?
-                                </a>
+                                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Is online giving safe? Is your site secure?
+                                </button>
                             </h3>
                         </div>
 
-                        <div class="collapse show" id="security" data-parent="#accordion">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div>
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="banking">
+                        <div class="card-header" role="tab" id="headingTwo">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#banking">
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Can I give through my bank account?
-                                </a>
+                                </button>
                             </h3>
                         </div>
-
-                        <div class="collapse" id="banking" data-parent="#accordion">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="d-none d-sm-block"> TBD</em></p>
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div> 
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="payment">
+                        <div class="card-header" role="tab" id="headingThree">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#payment">
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Can I use my debit card or credit card?
-                                </a>
+                                </button>
                             </h3>
                         </div>
 
-                        <div role="tabpanel" class="collapse" id="payment" data-parent="#accordion">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="d-none d-sm-block"> TBD</em></p>
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div>
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="hidden-fees">
+                        <div class="card-header" role="tab" id="headingFour">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#hidden-fees">
-                                    Are there any hidden fees or charges to give online??
-                                </a>
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Are there any hidden fees or charges to give online?
+                                </button>
                             </h3>
                         </div>
 
-                        <div role="tabpanel" class="collapse" id="hidden-fees" data-parent="#accordion">
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                             <div class="card-body">
-                               <p class="d-none d-sm-block"> TBD</em></p>
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div>    
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="history">
+                        <div class="card-header" role="tab" id="headingFive">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#history">
-                                    How do I get a Contribution Statement or view my Giving History? 
-                                </a>
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How do I get a Contribution Statement or view my Giving History?
+                                </button>
                             </h3>
                         </div>
 
-                        <div class="collapse" id="history" data-parent="#accordion">
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="d-none d-sm-block"> TBD</em></p>
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div>
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="deadline">
+                        <div class="card-header" role="tab" id="headingSix">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#deadline">
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     What is the deadline for annual contributions?
-                                </a>
+                                </button>
                             </h3>
                         </div>
 
-                        <div class="collapse" id="deadline" data-parent="#accordion">
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="d-none d-sm-block"> TBD</em></p>                           
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div> 
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="manage">
+                        <div class="card-header" role="tab" id="headingSeven">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#manage">
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                     How do I change my online recurring giving schedule or cancel it?
-                                </a>
+                                </button>
                             </h3>
                         </div>
 
-                        <div role="tabpanel" class="collapse" id="manage" data-parent="#accordion">
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="d-none d-sm-block"> TBD</em></p>
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div>
 
                     <div class="card">
-                        <div class="card-header" role="tab" id="usage">
+                        <div class="card-header" role="tab" id="headingEight">
                             <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#usage">
+                                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                     How are the funds used?
-                                </a>
+                                </button>
                             </h3>
                         </div>
 
-                        <div role="tabpanel" class="collapse" id="usage" data-parent="#accordion">
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
                             <div class="card-body">
-                               <p class="d-none d-sm-block"> TBD</em></p>
+                                <p class="d-none d-sm-block">TBD</p>
                             </div>
-                         </div> 
+                        </div>
                     </div>                      
 
                 </div>                
@@ -366,45 +361,42 @@
         </div>
         </section>
 
-
-            
         <!-- Footer-->
-        <footer>
+        <footer class="bg-secondary">
             <div class="container">
-                <div class="row footer p-3 bg-warning">
-                    <!--div class="d-lg-none">
-                        <div class="col-12">
-                            <div class="d-lg-none">
-                                <h4 class="text-uppercase">1 CORINTHIANS 5:7</h4>
-                                <p>“For we live by faith, not by sight.”</p>
-                                <p class="align-items-bottom"><span class="fas fa-pray"></span> Need Prayer?</p>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="my-3 my-lg-0 d-lg-none">
-                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-12 d-lg-none">
-                            <div>Copyright 2020 © First Haitian Missionary Church</div>
-                            <div class="p-2" ><a class="mr-3"href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>                    
-                        </div>
-                    </div-->
-                    <div class="col-md-4">
-                        <h4 class="text-uppercase">1 Corinthians</h4>
-                        <p>“For we live by faith, not by sight.”</p>
+                <div class="row footer">
+                    <div class="col-12 col-md-6">
+                        <p>1 Corinthians 5:7 <br/>"For we live by faith, not by sight.”</p>
                         <p><span class="fas fa-pray"></span> Need Prayer?</p>
                     </div>
-                    <div class="col-md-4 p-2">
+
+                    <div class="col-6 col-md-3 text-right">
+                        <h6>Resources</h6>
+                        <ul id="quickLinks">
+                            <li>Events Calendar</li>
+                            <li>New Here, Start Here!</li>
+                            <li>Join a small group</li>
+                            <li>Ministries</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 text-left">
+                        <h6>Connect</h6>
+                        <ul id="quickLinks" class="text-left">
+                            <li>Connect</li>
+                            <li>My Account</li>
+                            <li>Serve</li>
+                            <li>Contact Us</li>
+                            <li>Give</li>   
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
                         <div>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </div>
+                        <div class="pt-2">Copyright 2020 © First Haitian Missionary Church</div>
+                        <div class="pt-2"><a class="mr-3" id="infoLinks" href="#!">Privacy Policy</a><a id="infoLinks" href="#!">Terms of Use</a></div>
                     </div>
-                    <div class="col-md-4 p-2">
-                        <div>Copyright 2020 © First Haitian Missionary Church</div>
-                        <div class="pt-2" ><a class="mr-3"href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>                    
-                    </div>
-
                 </div>
             </div>
         </footer>
