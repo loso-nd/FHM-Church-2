@@ -28,11 +28,11 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa fa-bars fa-lg"></i></span>
                 </button>
-                <a class="navbar-brand mr-auto" href="./index.html"><img src="#" />FHM Church</a>
+                <a class="navbar-brand mr-auto pl-2" href="./index.html">FHM Church</a>
                 <div class="navbar-collapse collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto pl-2">
-                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="#">Ministries</a>
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="./home.html">Home</a></li>
+                        <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="./ministries.html">Ministries</a>
                             <div class="dropdown-menu text-uppercase">
                                 <a class="dropdown-item" href="./children.html">Children</a>
                                 <a class="dropdown-item" href="./youth.html">Youth</a>
@@ -40,7 +40,7 @@
                             </div>
                         </li>
                         <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Events</a></li>
-                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Serve</a></li>
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="./serve.html">Serve</a></li>
                         <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="#">About Us</a>
                             <div class="dropdown-menu text-uppercase">
                                 <a class="dropdown-item" href="#">Contact Us</a>
@@ -61,16 +61,106 @@
                 </div>
             </div>
         </nav>
+
+        <!--Creating a Modal, All modal writting code should be placed at the top -->
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="loginModal">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" 
+                                        id="exampleInputEmail3" placeholder="Enter email">                    
+                                </div>
+                                
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me?</label>         
+                                    </div>
+                                </div>
+
+                            </div>   
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button> 
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>                                
+                            </div>                         
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Creating a Modal, All modal writting code should be placed at the top -->
+        <div class="modal fade" id="givingModal" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="givingModal"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only pt-2" for="exampleInputEmail3">Username</label>Username
+                                    <input type="email" class="form-control form-control-sm mr-1" 
+                                        id="exampleInputEmail3" placeholder="Enter email"/>                    
+                                </div>
+                                
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only pt-2" for="exampleInputPassword3">Password</label>Password
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <div class="col-sm-auto pt-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me?</label>         
+                                    </div>
+                                </div>
+
+                            </div>   
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto">Forgot Password</button> 
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>    
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Register</button>                              
+                            </div>                         
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>         
     
         <!-- Jumbotron / Masthead-->
         <header class="jumbotron masthead">
             <div class="container">
+                <div class="align-top alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>COVID-19 UPDATES: </strong> We will not be having in-person church service until further notice.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
                 <div class="masthead-subheading">Welcome To First Haitian Missionary Church </div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <!--    a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services" >Tell Me More</a-->
-            </div> 
+            </div>
         </header>
-        <!-- Navigation--> 
+        <!-- Navigation-->
             
         <!-- WELCOME-->
         <section class="page-section">
@@ -99,7 +189,7 @@
                             <img class="d-flex img-thumbnail" src="assets/img/portfolio/02-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4 order-first">
                                 <h1 class="text-uppercase text-center">Children</h1>
-                                <p class="text-center m-auto">If you love kids, this is the ministry for you. 
+                                <p class="text-center m-auto" id="ministryText">If you love kids, this is the ministry for you. 
                                     Our children’s team has the opportunity to share God’s love in a direct and tangible way. 
                                     You have the option of working with many different age ranges. No experience is
                                      necessary-just a willingness to serve.</p> 
@@ -139,7 +229,7 @@
                                     src="assets/img/portfolio/01-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4">
                                 <h1 class="text-uppercase text-center">Greeter</h1>
-                                <p class="text-center">A warm smile, a firm handshake, these are the experiences that 
+                                <p class="text-center m-auto" id="ministryText">A warm smile, a firm handshake, these are the experiences that 
                                     make a church a home. As a greeter you set the tone of a person’s visit by creating 
                                     a welcoming environment. It’s also a great opportunity to make a ton of new friends 
                                     that you’ll soon call family.
@@ -179,7 +269,7 @@
                             <img class="d-flex img-thumbnail" src="assets/img/portfolio/02-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4 order-first">
                                 <h1 class="text-uppercase text-center">Media</h1>
-                                <p class="text-center">The Media Team work to provide technical, video and creative support of the 
+                                <p class="text-center m-auto" id="ministryText">The Media Team work to provide technical, video and creative support of the 
                                     Sunday worship services and potentially special services as well. Must have the ability to solve 
                                     technical issues with creative solutions, participate in brainstorming and collaborative creative 
                                     sessions with other Media Team members.
@@ -221,7 +311,7 @@
                             <img class="d-flex img-thumbnail" src="assets/img/portfolio/02-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4 order-first">
                                 <h1 class="text-uppercase text-center">Musician</h1>
-                                <p class="text-center m-auto">If you love music, this is the ministry for you.
+                                <p class="text-center m-auto" id="ministryText">If you love music, this is the ministry for you.
                                      Our music team has the opportunity to share God’s message through the sound of music. 
                                      You have the option of working with many different instruments and musicians. 
                                      Some experience is necessary and a willingness to serve.</p>  
@@ -261,7 +351,7 @@
                                     src="assets/img/portfolio/01-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4">
                                 <h1 class="text-uppercase text-center">Usher</h1>
-                                <p class="text-center">Walking into a service can be overwhelming for some. 
+                                <p class="text-center m-auto" id="ministryText">Walking into a service can be overwhelming for some. 
                                     As a usher you get to put their minds at ease as you help them find their seats and fill their every need. 
                                     There’s always time to say hello to a few regulars and build new friendships with first-time guests.
                                 </p>
@@ -300,7 +390,7 @@
                             <img class="d-flex img-thumbnail" src="assets/img/portfolio/02-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4 order-first">
                                 <h1 class="text-uppercase text-center">Worship Team</h1>
-                                <p class="text-center">Do you love to worship in song for the Lord? Do you have a good voice? 
+                                <p class="text-center m-auto" id="ministryText">Do you love to worship in song for the Lord? Do you have a good voice? 
                                     As a worship team member you will help lead the congregation to a place of worship. 
                                 </p>
                                 <div class="col-12 mt-4">
@@ -309,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Media Object 2 for Mobile-->
+                    <!-- Media Object 6 for Mobile-->
                     <div class="m-auto d-block d-lg-none">
                         <div class="card">
                             <img src="assets/img/portfolio/ninasimone.png" class="card-img-top" alt="Nina Simone"/>
@@ -340,23 +430,21 @@
                     <div class="col-6 col-md-3 text-right">
                         <h6>Resources</h6>
                         <ul id="quickLinks">
-                            <li>Events Calendar</li>
-                            <li>New Here, Start Here!</li>
-                            <li>Join a small group</li>
-                            <li>Ministries</li>
+                            <li><a class="footer-link" href="#">Events Calendar</a></li>
+                            <li><a class="footer-link" href="./home.html">New Here, Start Here!</a></li>
+                            <li><a class="footer-link" href="#">Join a small group</a></li>
+                            <li><a class="footer-link" data-toggle="modal" data-target="#givingModal" id="givingHistory" href="#">Ministries</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3 text-left">
                         <h6>Connect</h6>
                         <ul id="quickLinks" class="text-left">
-                            <li>Connect</li>
-                            <li>My Account</li>
-                            <li>Serve</li>
-                            <li>Contact Us</li>
-                            <li>Give</li>   
+                            <li><a class="footer-link" data-toggle="modal" data-target="#loginModal" id="loginButton" href="#">My Account</a></li>
+                            <li><a class="footer-link" href="./serve.html">Serve</a></li>
+                            <li><a class="footer-link" href="#">Contact Us</a></li>
+                            <li><a class="footer-link" href="./give.html">Give</a></li>  
                         </ul>
                     </div>
-
                     <div class="col-12">
                         <div>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -422,7 +510,3 @@
     </body>
 </html>
 
-
-<!-- Notes 
-
--->

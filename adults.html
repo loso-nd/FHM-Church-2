@@ -28,10 +28,10 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa fa-bars fa-lg"></i></span>
                 </button>
-                <a class="navbar-brand mr-auto" href="./index.html"><img src="#" />FHM Church</a>
+                <a class="navbar-brand mr-auto pl-2" href="./index.html">FHM Church</a>
                 <div class="navbar-collapse collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto pl-2">
-                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="./home.html">Home</a></li>
                         <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="./ministries.html">Ministries</a>
                             <div class="dropdown-menu text-uppercase">
                                 <a class="dropdown-item" href="./children.html">Children</a>
@@ -40,7 +40,7 @@
                             </div>
                         </li>
                         <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Events</a></li>
-                        <li class="nav-item active text-uppercase"><a class="nav-link" href="#">Serve</a></li>
+                        <li class="nav-item active text-uppercase"><a class="nav-link" href="./serve.html">Serve</a></li>
                         <li class="nav-item active text-uppercase dropdown"><a class="nav-link" href="#">About Us</a>
                             <div class="dropdown-menu text-uppercase">
                                 <a class="dropdown-item" href="#">Contact Us</a>
@@ -61,13 +61,103 @@
                 </div>
             </div>
         </nav>
+
+        <!--Creating a Modal, All modal writting code should be placed at the top -->
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="loginModal">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" 
+                                        id="exampleInputEmail3" placeholder="Enter email">                    
+                                </div>
+                                
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me?</label>         
+                                    </div>
+                                </div>
+
+                            </div>   
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button> 
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>                                
+                            </div>                         
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Creating a Modal, All modal writting code should be placed at the top -->
+        <div class="modal fade" id="givingModal" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="givingModal"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only pt-2" for="exampleInputEmail3">Username</label>Username
+                                    <input type="email" class="form-control form-control-sm mr-1" 
+                                        id="exampleInputEmail3" placeholder="Enter email"/>                    
+                                </div>
+                                
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only pt-2" for="exampleInputPassword3">Password</label>Password
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <div class="col-sm-auto pt-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me?</label>         
+                                    </div>
+                                </div>
+
+                            </div>   
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto">Forgot Password</button> 
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>    
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Register</button>                              
+                            </div>                         
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>         
     
         <!-- Jumbotron / Masthead-->
         <header class="jumbotron masthead">
             <div class="container">
+                <div class="align-top alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>COVID-19 UPDATES: </strong> We will not be having in-person church service until further notice.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
                 <div class="masthead-subheading">Welcome To First Haitian Missionary Church </div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <!--    a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services" >Tell Me More</a-->
             </div>
         </header>
         <!-- Navigation-->
@@ -95,7 +185,7 @@
                             <img class="d-flex img-thumbnail" src="assets/img/portfolio/02-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4 order-first">
                                 <h1 class="text-uppercase text-center">Ministry for Men</h1>
-                                <p class="text-center m-auto">Men, are you challenged by the balancing act of life? It doesn’t have to be that way. 
+                                <p class="text-center m-auto" id="ministryText">Men, are you challenged by the balancing act of life? It doesn’t have to be that way. 
                                     Join with other men to talk about the real issues of life and what the Bible has to say about them. 
                                     Each week is a different study that is video driven with discussion and is open to all men in our community.</p>   
                             </div>
@@ -127,7 +217,7 @@
                                     src="assets/img/portfolio/01-thumbnail.jpg" alt="Img 1" />
                             <div class="media-body p-4">
                                 <h1 class="text-uppercase text-center">Ministry for Women</h1>
-                                <p>A spiritually maturing woman that walks alongside other women, helping them to know Christ, live for Christ, 
+                                <p class="text-center m-auto" id="ministryText">A spiritually maturing woman that walks alongside other women, helping them to know Christ, live for Christ, 
                                     and become more like Christ, by using the Word of God, the Wonder of God, and the Work of God.
                                     Our Women's Ministry exists to cultivate a community of women who are for one another and are confident in who 
                                     they are in Christ. </p> 
@@ -144,7 +234,6 @@
                                   live for Christ, and become more like Christ, by using the Word of God, the Wonder of God, and the Work of God.
                                   Our Women's Ministry exists to cultivate a community of women who are for one another and are confident in who 
                                   they are in Christ. </p>
-                              <!--a href="#" class="btn btn-primary">Go somewhere</a-->
                             </div>
                           </div>
                     </div>
@@ -205,8 +294,8 @@
                           Featured
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Upcoming Events for Childrens Ministry</h3>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h3 class="card-title">Upcoming Events for Adult Ministry</h3>
+                            <p class="card-text">FHM A/G Irvington | Google Meet | Jul 28, 2020 | Details  <a href="#"><span class="fas fa-arrow-circle-right"></span></a></p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                         <div class="card-footer text-muted">
@@ -229,23 +318,21 @@
                     <div class="col-6 col-md-3 text-right">
                         <h6>Resources</h6>
                         <ul id="quickLinks">
-                            <li>Events Calendar</li>
-                            <li>New Here, Start Here!</li>
-                            <li>Join a small group</li>
-                            <li>Ministries</li>
+                            <li><a class="footer-link" href="#">Events Calendar</a></li>
+                            <li><a class="footer-link" href="./home.html">New Here, Start Here!</a></li>
+                            <li><a class="footer-link" href="#">Join a small group</a></li>
+                            <li><a class="footer-link" data-toggle="modal" data-target="#givingModal" id="givingHistory" href="#">Ministries</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3 text-left">
                         <h6>Connect</h6>
                         <ul id="quickLinks" class="text-left">
-                            <li>Connect</li>
-                            <li>My Account</li>
-                            <li>Serve</li>
-                            <li>Contact Us</li>
-                            <li>Give</li>   
+                            <li><a class="footer-link" data-toggle="modal" data-target="#loginModal" id="loginButton" href="#">My Account</a></li>
+                            <li><a class="footer-link" href="./serve.html">Serve</a></li>
+                            <li><a class="footer-link" href="#">Contact Us</a></li>
+                            <li><a class="footer-link" href="./give.html">Give</a></li>  
                         </ul>
                     </div>
-
                     <div class="col-12">
                         <div>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
